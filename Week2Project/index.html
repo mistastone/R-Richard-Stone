@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Law Offices of R. Richard Stone</title>
+		<link rel="stylesheet" type="text/css" href="assets/stylesheet.css">
+
+		<!-- FONTS -->
+
+		<link href='http://fonts.googleapis.com/css?family=Playfair+Display+SC:400,900,700' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,700,900' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Quattrocento:400,700' rel='stylesheet' type='text/css'>
+	</head>
+
+<body>
+
+	<header>
+
+		<div class="socialbox">
+			<a href="https://www.facebook.com"><img src="assets/images/mail.png" alt="Email"></a>
+			<a href="https://www.facebook.com"><img src="assets/images/facebook.png" alt="Facebook"></a>
+			<a href="https://www.facebook.com"><img src="assets/images/twitter.png" alt="Twitter"></a>
+		</div>
+
+		<div class="mainhead">
+				<h1><a href="index.html">Law Offices of R. Richard Stone<span> LL.B</span></h1>
+				<h2>Barrister and Solicitor</h2>
+				<h2>Since 1975</a></h2>	
+		</div>	
+		
+	<!-- NAVIGATION BAR -->
+		<ul class="nav">
+
+			<li><a href="index.html">Profile</a>
+
+				<ul class="sub-nav">
+					<li><a href="index.html">About Richard</a></li>
+					<li><a href="index.html">History of the Practice</a></li>
+				</ul>
+
+			</li>
+
+			<li><a href="focus.html">Areas of Focus</a>
+
+				<ul class="sub-nav">
+					<li><a href="focus.html">Family</a>
+					<li><a href="focus.html">Criminal</a>
+				</ul>
+
+			</li>
+
+			<li><a href="testimonials.html">Testimonials</a></li>
+			<li><a href="contact.html">Contact</a></li>
+
+		</ul>
+
+	<!-- NAVIGATION BAR ENDS -->	
+
+	</header>
+
+<!-- HERO IMAGE -->
+
+	<section class="hero">
+
+				<h1 class="quotes">Experience</h1>
+				<h1 class="quotes">Integrity</h1>
+				<h1 class="quotes">Knowledge</h1>
+				<h1 class="quotes">History</h1>
+
+	</section>
+
+<!-- VALUES ICONS SECTION -->
+
+	<section class="values">
+
+		<div class="valuebox">
+			<img src="assets/images/pillar.png" alt="Experience">
+			<p>Experience and history are only developed over time, they cannot be taught. Since 1975 Richard Stone has represented a countless number of clients with a variety of legal issues in Ontario. The firm has established itself as a model for legal performance in the Greater Toronto Area.</p>
+		</div>
+
+		<div class="valuebox">
+			<img src="assets/images/shake.png" alt="Respect">
+			<p>One of the core values of our firm is respect for the client. We understand that you as the client are entering an extremely difficult period in life. It is our goal to be empathetic towards that and to demonstrate an understanding from an emotional, as well as a legal, standpoint.</p>
+		</div>
+
+		<div class="valuebox">
+			<img src="assets/images/scale.png" alt="Justice">
+			<p>Our firm prides itself on the results it has brought to clients since establishment. Mr. Stone is able to continually bring these results to clients because he has an in depth understanding and appreciation for the Canadian legal system. Fair and just representation are foundational values of our firm.</p>
+		</div>
+
+	</section>
+
+<!-- IMAGE, MESSAGE, AND FOCUS SUMMARY SECTION -->
+
+	<section class="main">
+	
+		<div class="box1">
+
+			<img src="assets/images/richard.jpg">
+
+		</div>
+
+		<div class="box2">
+			<h2>A Message From Richard</h2>
+			<p>Hello,</p><p>As a lawyer who has been practicing law in Ontario for almost 40 years I know that seeking legal counsel and experiencing legal proceedings can be a trying time for all parties involved. During my career I have discovered that the most important goal I can achieve is putting my client's mind at ease. This stressful period demands representation by a lawyer with a history of acheiving this goal. Over the span of my career I have striven to get the very best results for my client's, whether they are seeking help for family or criminal issues. At a time such as this it only makes sense to put your trust in a lawyer who has the experience to protect you, your rights, and your family.</p><p>&mdash;R. Richard Stone</p>
+		</div>
+	
+		<div class="box3">
+
+			<h2>Areas of Focus</h2>
+				<h3>Family</h3>
+					<ul>
+						<li>Separation Agreements</li>
+						<li>Marriage Contracts</li>
+						<li>Cohabitation Agreements</li>
+						<li>Child Support</li>
+					</ul>
+					
+				<h3>Criminal</h3>
+				<ul>
+					<li>Violent Crimes</li>
+					<li>Sex Crimes</li>
+					<li>Drugs and Narcotic Charges</li>
+					<li>Conspiracy Charges</li>
+					<li>DUI or DWI Charges</li>
+				</ul>
+					
+		</div>
+
+	</section>
+
+<!-- FOOTER STARTS HERE -->
+
+	<footer class="contact">
+		
+		
+		<p>1120 Finch Avenue West, Suite 102<br>Toronto, ON M3J 3H7<br>Tel: (416) 667-9393</p><span class="copyright"><p>Richard Stone &#169;2014. All Rights Reserved. Disclaimer.</p></span>
+
+	</footer>
+
+<!-- JAVASCRIPT CODE FOR FADING TEXT -->
+<!-- JAVASCRIPT CODE FOR STICKY BAR -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	 <script src="sticky.js"></script>
+	<script type="text/javascript" charset="utf-8">
+		(function() {
+
+		    var quotes = $(".quotes");
+		    var quoteIndex = -1;
+		    
+		    function showNextQuote() {
+		        ++quoteIndex;
+		        quotes.eq(quoteIndex % quotes.length)
+		            .fadeIn(2000)
+		            .delay(2000)
+		            .fadeOut(2000, showNextQuote);
+		    }
+		    
+		    showNextQuote();
+		    
+		})();
+
+	</script>
+
+</body>
+</html>

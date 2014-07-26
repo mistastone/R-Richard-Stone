@@ -1,0 +1,505 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+/*ol, ul {
+	list-style: none;
+}*/
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+* { -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box;
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+
+/*
+=================================
+Header Section
+=================================
+*/
+
+body {
+	background-image: url("images/grey.png");
+}
+
+.mainhead {
+	margin-top:30px;
+	margin-bottom:30px;
+}
+
+header {
+	background-image: url("images/grey.png");
+	width:100%;
+	position: relative;
+}
+
+h1 {
+	text-align: center;
+	font: 400 55px/150% "Playfair Display SC", "open-sans", "sans-serif";
+	color: #1F1F1F;
+}
+
+h1 span {
+	font-size: 20px;
+}
+
+header h1, h2, a {
+	text-decoration: none;
+	color: #1F1F1F;
+}
+
+header h2 {
+	text-align: center;
+	font: 400 18px/150% "Playfair Display SC", "open-sans", "sans-serif";
+	color: #1F1F1F;
+}
+
+/*
+=================================
+Boxes for Social Media Links
+=================================
+*/
+
+.socialbox {
+	float:right;
+	position: absolute;
+	bottom:0;
+	right:0;
+	margin-right:10px;
+}
+
+.socialbox img {
+	width: 40px;
+	padding-left: 10px;
+}
+
+/*
+=================================
+Navigation Bar and Sub-Menu
+=================================
+*/
+
+ul.nav {
+	background-image: url("images/classy.png");
+	width: 100%;
+	text-align: center;
+	float: left;
+	list-style: none;
+}
+
+ul.nav li {
+	float: left;	
+	width: 25%;
+	position: relative;
+}
+
+ul.nav li a {
+	font: 400 18px/150% "Playfair Display SC", "open-sans", "sans-serif";
+	padding:10px;
+	color: #f3f3f3;
+	text-decoration: none;
+	display: block;
+}
+
+ul.sub-nav {
+	width:100%;
+	position: absolute;
+	display: none;
+	background: rgba(127, 11, 0, 0.75);
+	top:100%;
+	left: 0;
+	-webkit-transition: all 1.5s ease-out;
+  	-moz-transition: all 1.5s ease-out;
+  	-o-transition: all 1.5s ease-out;
+  	transition: all 1.5s ease-out;
+}
+
+ul.sub-nav li {
+	display: block;
+	width: 100%;
+}
+
+ul.nav li:hover ul.sub-nav {
+	display: block;
+}
+
+ul.nav li ul li {
+	font: 400 18px/150% "Playfair Display SC", "open-sans", "sans-serif";
+	padding:10px;
+	color: #f3f3f3;
+	text-decoration: none;
+}
+
+ul.nav a:hover {
+	/*background: rgba(66, 110, 204, 0.75);*/
+	background: rgb(127, 11, 0);
+	text-decoration: none;
+	padding:10px;
+	-webkit-transition: all 1.5s ease-out;
+  	-moz-transition: all 1.5s ease-out;
+  	-o-transition: all 1.5s ease-out;
+  	transition: all 1.5s ease-out;
+}
+
+body.sticky ul.nav {
+      position: fixed;
+      top:0;
+      width:100%;
+      z-index: 1000;
+      height: 50px;
+}
+
+/*
+=================================
+Main Homepage - Hero Image
+=================================
+*/
+
+.hero {
+	background-image: url("images/filler2.jpg");
+	background-attachment: fixed;
+	background-size: cover;
+	position: center;
+	margin-top: 50px;
+	width: 100%;
+	height: 70vh;
+}
+
+/*
+=================================
+Main Homepage - Fading Text
+=================================
+*/
+
+.quotes {
+	font: 400 60px/150% "Playfair Display SC", "open-sans", "sans-serif";
+	display: none;
+	position: relative;
+	top: 35%;
+}
+
+/*
+=====================================
+Main Homepage - Values/Icons Section
+=====================================
+*/
+
+.values {
+	text-align: center;
+	width: 100%;
+	margin-top:40px;
+}
+
+.valuebox {
+	width: 33%;
+	float: left;
+}
+
+.valuebox p {
+	font: 400 17px/150% "Quattrocento", "open-sans", "sans-serif";
+	color: #1F1F1F;
+	text-align: center;
+	margin-top: 10px;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
+
+.valuebox img {
+	width: 110px;
+}
+
+/*
+=================================
+Main Homepage - Main Information
+=================================
+*/
+
+.main {
+	background-image: url("images/classy.png");
+	width: 100%;
+	padding: 20px;
+	margin-top: 40px;
+	float: left;
+}
+
+.box1 {
+	float: left;
+}
+
+.box1 img {
+	width: 440px;
+	margin-top:70px;
+	border-radius: 5px;
+}
+
+.box2 {
+	width: 40%;
+	margin-left:20px;
+	float: left;
+	padding: 15px;
+	color: #f3f3f3;
+}
+
+.box3 {
+	margin-left: 20px;
+	width: 21%;
+	float: left;
+	padding: 15px;
+	color: #f3f3f3;
+}
+
+.box2 h2, 
+.box3 h2 {
+	font: 400 22px/150% "Playfair Display SC", "open-sans", "sans-serif";
+	color: #f3f3f3;
+}
+
+.box2 p,
+.box3 ul {
+	font: 400 17px/150% "Quattrocento", "open-sans", "sans-serif";
+	color: #f3f3f3;
+	padding-top:10px;
+}
+
+.box3 h3 {
+	font: 400 18px/150% "Quattrocento", "open-sans", "sans-serif";
+	color: #f3f3f3;
+	padding-top:10px;
+}
+
+.box3 ul {
+	padding-left: 30px;
+}
+
+/*
+=================================
+Testimonials Page
+=================================
+*/
+
+.testmain {
+	background-image: url("images/classy.png");
+	width:80%;
+	float: left;
+	margin-left: 10%;
+	margin-top: 20px;
+	padding:20px;
+	border-radius:5px;
+}
+
+.testmain blockquote {
+	font: 400 17px/150% "Quattrocento", "open-sans", "sans-serif";
+	color: #f3f3f3;
+}
+
+.testmain h2 {
+	font: 400 22px/150% "Playfair Display SC", "open-sans", "sans-serif";
+	color: #f3f3f3;
+	margin-left:10px;
+}
+
+.testmain img {
+	width: 460px;
+	border-radius: 5px;
+	float: left;
+	display: inline-block;
+	padding: 10px 20px 10px 10px;
+}
+
+
+/*
+=================================
+Contact Page Section
+=================================
+*/
+
+.contactinfo {
+	background-image: url("images/classy.png");
+	width:33%;
+	margin:20px;
+	padding:10px;
+}
+
+.contactinfo h2 {
+	font: 400 18px/150% "Playfair Display SC", "open-sans", "sans-serif";
+	color: #f3f3f3;
+}
+
+.contactinfo p {
+	font: 400 19px/150% "Quattrocento", "open-sans", "sans-serif";
+	color: #f3f3f3;
+	padding-top:10px;
+	padding-left: 10px;
+	padding-bottom: 10px;
+}
+
+.imagewrapper p {
+	font: 400 17px/150% "Quattrocento", "open-sans", "sans-serif";
+	color: #f3f3f3;
+	padding:10px;
+	float:left;
+}
+
+.contactinfo,
+.contactmap {
+	float: left;
+	border-radius:5px;
+}
+
+.contactinfo img {
+	width:40px;
+	padding:4px;
+	float:left;
+}
+
+.imageback {
+	background-image: url("images/grey.png");
+	float:left;
+	border-radius:5px;
+}
+
+.imageback.one,
+.imageback.two,
+.imageback.three,
+.imageback.four,
+.imageback.five {
+	clear:both;
+}
+
+.imagewrapper {
+	float:left;
+	padding-left:10px;
+}
+
+.contactmap {
+	background-image: url("images/classy.png");
+	margin-left:5%;
+	padding:10px;
+}
+
+/*
+=================================
+Contact Form
+=================================
+*/
+
+.form {
+	background-image: url("images/classy.png");
+	float: left;
+	width: 60%;
+	margin:20px;
+	padding:10px;
+	border-radius: 5px;
+}
+
+input,
+textarea {
+	background-color: rgba(69, 69, 82, 0.45);
+	border: 1px solid gray;
+	color: #f3f3f3;
+	border-radius: 5px;
+	padding:10px;
+}
+
+input.send {
+	margin-left: 0;
+	background-color: rgba(43, 73, 127, 0.5);
+	width: 100px;
+}
+
+input.send:hover {
+	background-color: rgba(127, 11, 0, 0.75);
+	cursor: pointer;
+	-webkit-box-shadow: 2px 2px 5px black;
+	box-shadow: 2px 2px 5px black;
+	-webkit-transition: all 2s ease-out;
+  	-moz-transition: all 2s ease-out;
+  	-o-transition: all 2s ease-out;
+  	transition: all 2s ease-out;
+}
+
+input.emailAddress,
+input.phoneNumber,
+input.name {
+	width: 50%;
+}
+
+textarea.message {
+	width: 100%;
+}
+
+/*
+=================================
+Footer Section
+=================================
+*/
+
+.contact {
+	background-image: url("images/classy.png");
+	float: left;
+	text-align: center;
+	width:100%;
+	margin-top: 30px;
+}
+
+.contact p {
+	font: 400 16px/150% "Quattrocento", "open-sans", "sans-serif";
+	padding-top:20px;
+	color: #f3f3f3;
+}
+
+.copyright p {
+	font-size: 14px;
+}
